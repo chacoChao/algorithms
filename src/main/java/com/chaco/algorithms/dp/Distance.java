@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms.dp;
+package com.chaco.algorithms.dp;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms.leetcode;
+package com.chaco.algorithms.leetcode;
 
 public class lc50 {
     public static double myPow(double x, int n) {

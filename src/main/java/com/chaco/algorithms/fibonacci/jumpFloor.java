@@ -1,6 +1,4 @@
-package com.chaco.chao.algorithms.fibonacci;
-
-import org.junit.jupiter.api.Test;
+package com.chaco.algorithms.fibonacci;
 
 /**
  * author:zhaopeiyan001
@@ -28,12 +26,6 @@ public class jumpFloor {
         return 0;
     }
 
-    @Test
-    public void testJumpFloor() {
-        int i = this.JumpFloor(39);
-        System.out.println(i);
-    }
-
     /**
      * 一只青蛙一次可以跳上1级台阶，也可以跳上2级……它也可以跳上n级。求该青蛙跳上一个n级的台阶总共有多少种跳法。
      * 变态跳台阶
@@ -46,7 +38,7 @@ public class jumpFloor {
         if (target == 1) {
             return 1;
         }
-        return 2<<(target - 2);
+        return 2 << (target - 2);
     }
 
 }

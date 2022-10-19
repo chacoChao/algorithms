@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms.dp;
+package com.chaco.algorithms.dp;
 
 /**
  * 今天就来说一下背包问题吧，就讨论最常说的 0-1 背包问题。描述：

@@ -1,6 +1,4 @@
-package com.chaco.chao.algorithms.array;
-
-import org.junit.jupiter.api.Test;
+package com.chaco.algorithms.array;
 
 import java.util.ArrayList;
 
@@ -28,12 +26,4 @@ public class minNumberInRotateArray {
         }
         return result;
     }
-
-    @Test
-    public void test() {
-        int[] array = {3, 4, 5, 1, 2};
-        int i = this.minNumberInRotateArray(array);
-        System.out.println("===================" + i);
-    }
-
 }

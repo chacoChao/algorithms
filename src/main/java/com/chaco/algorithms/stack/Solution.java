@@ -1,6 +1,4 @@
-package com.chaco.chao.algorithms.stack;
-
-import org.junit.jupiter.api.Test;
+package com.chaco.algorithms.stack;
 
 /**
  * author:zhaopeiyan001
@@ -26,10 +24,5 @@ public class Solution {
 
     public int min() {
         return 0;
-    }
-
-    @Test
-    public void test() {
-
     }
 }

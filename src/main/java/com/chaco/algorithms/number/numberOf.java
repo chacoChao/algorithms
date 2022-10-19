@@ -1,6 +1,4 @@
-package com.chaco.chao.algorithms.number;
-
-import org.junit.jupiter.api.Test;
+package com.chaco.algorithms.number;
 
 /**
  * author:zhaopeiyan001
@@ -49,14 +47,5 @@ public class numberOf {
             }
         }
         return sum;
-    }
-
-    @Test
-    public void testNumberOf() {
-        int i = this.NumberOf1(-9);
-        int i2 = this.NumberOf2(-9);
-        int i8 = this.NumberOf1(9);
-        int i9 = this.NumberOf2(9);
-        System.out.println(i);
     }
 }

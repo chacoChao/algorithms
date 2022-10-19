@@ -1,8 +1,7 @@
-package com.chaco.chao.algorithms.tree;
+package com.chaco.algorithms.tree;
 
 import lombok.Data;
 import lombok.ToString;
-import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
@@ -92,14 +91,5 @@ public class reConstructBinaryTree {
         TreeNode(int x) {
             val = x;
         }
-    }
-
-    @Test
-    public void reTree() {
-        int[] preNode = {1,2,4,7,3,5,6,8};
-        int[] midNode = {4,7,2,1,5,3,8,6};
-//        TreeNode treeNode = this.reConstructBinaryTree2(preNode, midNode);
-        TreeNode treeNode = this.reConstructBinaryTree(preNode, midNode);
-        System.out.println("=======treeNode:" + treeNode.toString());
     }
 }

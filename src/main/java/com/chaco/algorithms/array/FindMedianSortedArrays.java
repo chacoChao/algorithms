@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms.array;
+package com.chaco.algorithms.array;
 
 /**
  * 给定两个大小分别为 m 和 n 的正序（从小到大）数组nums1 和nums2。请你找出并返回这两个正序数组的 中位数 。
@@ -6,8 +6,8 @@ package com.chaco.chao.algorithms.array;
  * 算法的时间复杂度应该为 O(log (m+n)) 。
  *
  * @author zhaopeiyan
- * @link https://leetcode-cn.com/problems/median-of-two-sorted-arrays/
- * @date 2021/12/20 4:51 PM
+ * @link <a href="https://leetcode-cn.com/problems/median-of-two-sorted-arrays/">...</a>
+ * {@code @date} 2021/12/20 4:51 PM
  */
 public class FindMedianSortedArrays {
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {

@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms.dp;
+package com.chaco.algorithms.dp;
 
 /**
  * 2022-05-16字节-客服中台一面算法

@@ -1,7 +1,6 @@
-package com.chaco.chao.algorithms.leetcode;
+package com.chaco.algorithms.leetcode;
 
-import com.chaco.chao.algorithms.ListNode;
-import org.junit.jupiter.api.Test;
+import com.chaco.algorithms.ListNode;
 
 /**
  * author:zhaopeiyan001
@@ -102,13 +101,6 @@ public class reverseList {
             newHead = node;
         }
         return newHead;
-    }
-
-    @Test
-    public void test() {
-        ListNode listNode = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, null)))));
-        ListNode p1 = this.ReverseList2(listNode);
-        System.out.println("===================");
     }
 }
 

@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms.amazon;
+package com.chaco.algorithms.amazon;
 
 import java.io.*;
 import java.util.ArrayList;

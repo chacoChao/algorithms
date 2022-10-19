@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms.array;
+package com.chaco.algorithms.array;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -21,7 +21,7 @@ public class permute {
 
     public static void main(String[] args) {
         int[] input = new int[]{1,2,3};
-        List<List<Integer>> permute = com.chaco.chao.algorithms.array.permute.permute(input);
+        List<List<Integer>> permute = com.chaco.algorithms.array.permute.permute(input);
         System.out.println("hello world!"+ permute);
     }
 

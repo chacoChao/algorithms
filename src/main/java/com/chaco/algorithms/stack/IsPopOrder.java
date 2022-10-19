@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms.stack;
+package com.chaco.algorithms.stack;
 
 import java.util.Stack;
 

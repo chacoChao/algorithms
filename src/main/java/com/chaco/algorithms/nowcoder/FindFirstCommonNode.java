@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms.nowcoder;
+package com.chaco.algorithms.nowcoder;
 
 /**
  * @author zhaopeiyan

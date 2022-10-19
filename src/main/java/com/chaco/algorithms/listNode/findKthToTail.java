@@ -1,8 +1,6 @@
-package com.chaco.chao.algorithms.listNode;
+package com.chaco.algorithms.listNode;
 
-import org.junit.jupiter.api.Test;
-
-import com.chaco.chao.algorithms.ListNode;
+import com.chaco.algorithms.ListNode;
 
 /**
  * author:zhaopeiyan001
@@ -41,11 +39,5 @@ public class findKthToTail {
             former = former.next;
         }
         return latter;
-    }
-
-    @Test
-    public void test() {
-//        ListNode listNode = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-//        this.FindKthToTail(listNode, 1);
     }
 }

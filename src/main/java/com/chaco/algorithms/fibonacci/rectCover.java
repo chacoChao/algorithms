@@ -1,6 +1,4 @@
-package com.chaco.chao.algorithms.fibonacci;
-
-import org.junit.jupiter.api.Test;
+package com.chaco.algorithms.fibonacci;
 
 /**
  * author:zhaopeiyan001
@@ -14,21 +12,14 @@ public class rectCover {
      */
     /**
      * 【1】根据前几项1,2,3,5,8,13，……推出公式：f(n)=f(n-1)+f(n-2),n>=3 ; f(n)=n,n<3
-     *
+     * <p>
      * 【2】画图推导公式
-     *  https://blog.csdn.net/feng_zhiyu/article/details/82086059?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5
+     * <a href="https://blog.csdn.net/feng_zhiyu/article/details/82086059?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5">...</a>
      */
     public int RectCover(int target) {
         if (target < 3) {
             return target;
         }
         return RectCover(target - 1) + RectCover(target - 2);
-    }
-
-
-    @Test
-    public void testRectCover() {
-        int i = this.RectCover(19);
-        System.out.println(i);
     }
 }

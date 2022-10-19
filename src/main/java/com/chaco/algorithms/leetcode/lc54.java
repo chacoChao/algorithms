@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms.leetcode;
+package com.chaco.algorithms.leetcode;
 
 import java.util.ArrayList;
 import java.util.List;

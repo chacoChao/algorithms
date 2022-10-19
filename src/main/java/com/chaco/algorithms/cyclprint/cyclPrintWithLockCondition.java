@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms.cyclprint;
+package com.chaco.algorithms.cyclprint;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

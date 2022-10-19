@@ -1,6 +1,6 @@
-package com.chaco.chao.algorithms.listNode;
+package com.chaco.algorithms.listNode;
 
-import com.chaco.chao.algorithms.ListNode;
+import com.chaco.algorithms.ListNode;
 
 /**
  * 20220519 蓝湖二面   反转特定位置的链表

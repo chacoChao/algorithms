@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms.array;
+package com.chaco.algorithms.array;
 
 /**
  * {@link} https://leetcode.cn/problems/sub-sort-lcci/

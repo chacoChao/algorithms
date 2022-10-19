@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms.fibonacci;
+package com.chaco.algorithms.fibonacci;
 
 import java.util.ArrayList;
 

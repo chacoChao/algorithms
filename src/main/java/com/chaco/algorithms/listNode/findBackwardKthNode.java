@@ -1,9 +1,9 @@
-package com.chaco.chao.algorithms.listNode;
+package com.chaco.algorithms.listNode;
 
-import com.chaco.chao.algorithms.ListNode;
+import com.chaco.algorithms.ListNode;
 
 /**
- * @link https://www.nowcoder.com/practice/886370fe658f41b498d40fb34ae76ff9
+ * @link <a href="https://www.nowcoder.com/practice/886370fe658f41b498d40fb34ae76ff9">...</a>
  * 输入一个长度为 n 的链表，设链表中的元素的值为 ai ，返回该链表中倒数第k个节点。
  * 如果该链表长度小于k，请返回一个长度为 0 的链表。
  */

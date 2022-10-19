@@ -1,8 +1,8 @@
-package com.chaco.chao.algorithms.str;
+package com.chaco.algorithms.str;
 
 import org.apache.logging.log4j.util.Strings;
 
-import com.google.common.base.Objects;
+import java.util.Objects;
 
 /**
  * author:zhaopeiyan001
@@ -14,11 +14,11 @@ public class replaceEmpty {
      * 例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。
      */
     public static String replaceSpace(StringBuffer str) {
-        if (null == str || Objects.equal(Strings.EMPTY, str)) {
+        if (null == str || Objects.equals(Strings.EMPTY, str)) {
             return str.toString();
         }
         StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < str.length(); i++) {
+        for (int i = 0; i < str.length(); i++) {
             if (' ' == str.charAt(i)) {
                 sb.append("%20");
             } else {

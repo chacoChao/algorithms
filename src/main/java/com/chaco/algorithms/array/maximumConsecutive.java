@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms.array;
+package com.chaco.algorithms.array;
 
 import java.util.ArrayList;
 import java.util.Arrays;

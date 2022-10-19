@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms.str;
+package com.chaco.algorithms.str;
 
 /**
  * https://leetcode.cn/problems/add-strings/

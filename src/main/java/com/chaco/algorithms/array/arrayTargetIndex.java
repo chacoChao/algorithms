@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms.array;
+package com.chaco.algorithms.array;
 
 /**
  * author:zhaopeiyan001
@@ -51,8 +51,8 @@ public class arrayTargetIndex {
     public static void main(String[] args) {
         int[] input = {2,2};
         int[] targetIndex = findTargetIndex(input, 2);
-        for(int i = 0 ; i < targetIndex.length; i++){
-            System.out.println("======" + targetIndex[i] + '\n');
+        for (int index : targetIndex) {
+            System.out.println("======" + index + '\n');
         }
     }
 }

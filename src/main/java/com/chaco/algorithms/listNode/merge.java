@@ -1,8 +1,6 @@
-package com.chaco.chao.algorithms.listNode;
+package com.chaco.algorithms.listNode;
 
-import org.junit.jupiter.api.Test;
-
-import com.chaco.chao.algorithms.ListNode;
+import com.chaco.algorithms.ListNode;
 
 /**
  * author:zhaopeiyan001
@@ -57,14 +55,5 @@ public class merge {
             list1.next = this.Merge1(list1.next, list2);
             return list1;
         }
-    }
-
-    @Test
-    public void test() {
-//        ListNode listNode1 = new ListNode(1, new ListNode(3, new ListNode(5, new ListNode(7, new ListNode(9, null)))));
-//        ListNode listNode2 = new ListNode(2, new ListNode(2, new ListNode(4, new ListNode(6, new ListNode(8, null)))));
-//        ListNode merge = this.Merge(listNode1, listNode2);
-//        ListNode merge2 = this.Merge1(listNode1, listNode2);
-//        System.out.println("==================" + merge2.toString());
     }
 }

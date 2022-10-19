@@ -1,9 +1,8 @@
-package com.chaco.chao.algorithms.tree;
+package com.chaco.algorithms.tree;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.ToString;
-import org.junit.jupiter.api.Test;
 
 /**
  * author:zhaopeiyan001
@@ -32,20 +31,6 @@ public class hasSubTree {
             return false;
         }
         return (root1.val == root2.val) && DoesHasSonTree(root1.left, root2.left) && DoesHasSonTree(root1.right, root2.right);
-    }
-
-    @Test
-    public void test() {
-        TreeNode treeNode = new TreeNode(1);
-        treeNode.left = new TreeNode(2);
-        treeNode.right = new TreeNode(3);
-
-        TreeNode treeNode1 = new TreeNode(2);
-        treeNode.left = new TreeNode(3);
-        boolean b = this.HasSubtree(treeNode, treeNode1);
-        boolean b1 = false || true || false;
-        System.out.println(b1);
-        System.out.println("========" + b);
     }
 
     @Data

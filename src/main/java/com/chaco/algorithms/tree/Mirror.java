@@ -1,6 +1,4 @@
-package com.chaco.chao.algorithms.tree;
-
-import org.junit.jupiter.api.Test;
+package com.chaco.algorithms.tree;
 
 /**
  * author:zhaopeiyan001
@@ -24,16 +22,5 @@ public class Mirror {
         tmp = root.left;
         root.left = root.right;
         root.right = tmp;
-    }
-
-    @Test
-    public void test() {
-        hasSubTree.TreeNode root = new hasSubTree.TreeNode(2);
-        hasSubTree.TreeNode left = new hasSubTree.TreeNode(1);
-        hasSubTree.TreeNode right = new hasSubTree.TreeNode(3);
-        root.left = left;
-        root.right = right;
-        this.Mirror(root);
-        System.out.println(root.toString());
     }
 }

@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms;
+package com.chaco.algorithms.array;
 
 import java.util.*;
 import java.util.stream.Collectors;

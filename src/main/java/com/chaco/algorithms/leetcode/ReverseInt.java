@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms.leetcode;
+package com.chaco.algorithms.leetcode;
 
 /**
  * https://leetcode-cn.com/problems/reverse-integer/
