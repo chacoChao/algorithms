@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms;
+package com.chaco.algotithms.algorithms;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
