@@ -4,7 +4,7 @@ Algorithm collection
 
 ## 宝藏网站
 
-|code | desc|
+｜code｜ desc｜
 ｜------------- |-------------｜
 ｜[codeTop](https://codetop.cc/home) | problem｜
 ｜[leetcode](https://leetcode.cn/) ｜ ｜
