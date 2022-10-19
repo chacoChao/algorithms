@@ -5,7 +5,7 @@ Algorithm collection
 ## 宝藏网站
 
 ｜code｜ desc｜
-｜------------- |-------------｜
+｜-------------｜-------------｜
 ｜[codeTop](https://codetop.cc/home) | problem｜
 ｜[leetcode](https://leetcode.cn/) ｜ ｜
 ｜[newCoder](https://www.nowcoder.com/exam/oj/ta?page=1&tpId=13&type=13)｜ ｜
