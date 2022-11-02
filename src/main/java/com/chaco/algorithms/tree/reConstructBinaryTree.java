@@ -1,7 +1,6 @@
 package com.chaco.algorithms.tree;
 
-import lombok.Data;
-import lombok.ToString;
+import com.chaco.algorithms.TreeNode;
 
 import java.util.Arrays;
 
@@ -79,17 +78,5 @@ public class reConstructBinaryTree {
             }
         }
         return node;
-    }
-
-    @Data
-    @ToString
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }

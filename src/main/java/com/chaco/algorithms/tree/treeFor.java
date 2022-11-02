@@ -3,10 +3,7 @@ package com.chaco.algorithms.tree;
 // 2   3
 //4 5 6 7
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import com.chaco.algorithms.TreeNode;
 
 import java.util.*;
 
@@ -70,25 +67,5 @@ public class treeFor {
             res.add(new LinkedList(levelList));
         }
         return res;
-    }
-
-    @Data
-    @ToString
-    @NoArgsConstructor
-    @AllArgsConstructor
-    static
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-
-        @Override
-        public String toString() {
-            return "val=" + this.val;
-        }
     }
 }
