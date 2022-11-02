@@ -8,6 +8,16 @@ public class isSymmetric {
     }
 
     public boolean isSymmetric(TreeNode root) {
-        return false;
+        return check(root, root);
+    }
+
+    public boolean check(TreeNode left, TreeNode right) {
+        if (null == left && null == right) {
+            return true;
+        }
+        if (null == left || null == right) {
+            return false;
+        }
+        return left.val == right.val && check(left.left, right.right) && check(left.right, right.left);
     }
 }
