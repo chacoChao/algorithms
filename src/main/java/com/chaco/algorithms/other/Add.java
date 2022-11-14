@@ -1,4 +1,4 @@
-package com.chaco.algorithms.str;
+package com.chaco.algorithms.other;
 
 /**
  * https://www.nowcoder.com/practice/59ac416b4b944300b617d4f7f111b215
