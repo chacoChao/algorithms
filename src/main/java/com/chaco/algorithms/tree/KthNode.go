@@ -18,3 +18,21 @@ func KthNode(proot *TreeNode, k int) int {
 	KthNode(proot.Right, k)
 	return res
 }
+
+func kthLargest(root *TreeNode, k int) int {
+	var dfs func(*TreeNode)
+	var res int
+	dfs = func(node *TreeNode) {
+		if node == nil {
+			return
+		}
+		dfs(node.Right)
+		if k -= 1; k == 0 {
+			res = node.Val
+			return
+		}
+		dfs(node.Left)
+	}
+	dfs(root)
+	return res
+}
