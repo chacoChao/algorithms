@@ -4,6 +4,7 @@ import com.chaco.algorithms.TreeNode;
 
 /**
  * https://www.nowcoder.com/practice/57aa0bab91884a10b5136ca2c087f8ff?tpId=13&tqId=2305268&ru=/exam/oj/ta&qru=/ta/coding-interviews/question-ranking&sourceUrl=%2Fexam%2Foj%2Fta%3Fpage%3D1%26tpId%3D13%26type%3D13
+ * https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/description/
  * 给定一棵结点数为n 二叉搜索树，请找出其中的第 k 小的TreeNode结点值。
  * 1.返回第k小的节点值即可
  * 2.不能查找的情况，如二叉树为空，则返回-1，或者k大于n等等，也返回-1
@@ -24,11 +25,15 @@ public class KthNode {
         t3.right = t4;
         int i = KthNode.KthNode(t3, 4);
         System.out.println("KthNode.main:" + i);
+
+        int i1 = kthLargest(t3, 4);
+        System.out.println("KthNode.main:" + i1);
     }
 
     static int res = -1;
     static int count = 0;
 
+    //找到第k小的节点
     public static int KthNode(TreeNode proot, int k) {
         if (null == proot || k < 0) {
             return -1;
@@ -40,5 +45,20 @@ public class KthNode {
         }
         KthNode(proot.right, k);
         return res;
+    }
+
+
+    //找到第k大的节点,中序遍历倒叙
+    public static int kthLargest(TreeNode proot, int k) {
+        if (null == proot || 0 > k) {
+            return -1;
+        }
+        kthLargest(proot.right, k);
+        count++;
+        if (k == count) {
+            return proot.val;
+        }
+        kthLargest(proot.left, k);
+        return -1;
     }
 }
