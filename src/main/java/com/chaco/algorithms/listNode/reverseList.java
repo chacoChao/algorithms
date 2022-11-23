@@ -1,4 +1,4 @@
-package com.chaco.algorithms.leetcode;
+package com.chaco.algorithms.listNode;
 
 import com.chaco.algorithms.ListNode;
 
