@@ -7,6 +7,7 @@ func lastStoneWeightII(stones []int) int {
 	}
 	m := sum / 2
 	dp := make([]bool, m+1)
+	dp[0] = true
 	for _, weight := range stones {
 		for i := m; i >= weight; i-- {
 			dp[i] = dp[i] || dp[i-weight]
