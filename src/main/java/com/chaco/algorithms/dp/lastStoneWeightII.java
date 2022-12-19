@@ -1,5 +1,7 @@
 package com.chaco.algorithms.dp;
 
+import java.util.Arrays;
+
 /**
  * https://leetcode.cn/problems/last-stone-weight-ii/
  * 有一堆石头，用整数数组 stones 表示。其中 stones[i] 表示第 i 块石头的重量。
@@ -19,10 +21,7 @@ public class lastStoneWeightII {
 
     // 定义二维布尔数组 dp{dp}dp，其中 dp[i+1][j] {dp}[i+1][j]dp[i+1][j] 表示前 i 个石头能否凑出重量 j。
     public static int lastStoneWeightII(int[] stones) {
-        int sum = 0;
-        for (int i : stones) {
-            sum += i;
-        }
+        int sum = Arrays.stream(stones).reduce(0, Integer::sum);
         int n = stones.length;
         int m = sum / 2;
         boolean[][] dp = new boolean[n + 1][m + 1];
@@ -44,10 +43,7 @@ public class lastStoneWeightII {
     }
 
     public static int lastStoneWeightII2(int[] stones) {
-        int sum = 0;
-        for (int i : stones) {
-            sum += i;
-        }
+        int sum = Arrays.stream(stones).reduce(0, Integer::sum);
         int m = sum / 2;
         boolean[] dp = new boolean[m + 1];
         dp[0] = true;
