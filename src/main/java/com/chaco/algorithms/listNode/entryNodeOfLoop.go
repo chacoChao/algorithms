@@ -1,4 +1,4 @@
-package listNode
+package algorithms
 
 func EntryNodeOfLoop(pHead *ListNode) *ListNode {
 	fir := pHead

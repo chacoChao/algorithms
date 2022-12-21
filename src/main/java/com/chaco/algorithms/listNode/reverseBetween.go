@@ -1,4 +1,4 @@
-package listNode
+package algorithms
 
 func reverseBetween(head *ListNode, left int, right int) *ListNode {
 	res := &ListNode{}

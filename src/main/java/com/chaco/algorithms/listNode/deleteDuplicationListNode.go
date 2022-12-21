@@ -1,4 +1,4 @@
-package listNode
+package algorithms
 
 func deleteDuplication(pHead *ListNode) *ListNode {
 	if nil == pHead {

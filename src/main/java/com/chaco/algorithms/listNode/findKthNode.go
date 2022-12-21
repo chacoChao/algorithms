@@ -1,9 +1,4 @@
-package listNode
-
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+package algorithms
 
 func getKthFromEnd(head *ListNode, k int) *ListNode {
 	total := 0

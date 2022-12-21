@@ -1,4 +1,4 @@
-package listNode
+package algorithms
 
 func deleteNode(head *ListNode, val int) *ListNode {
 	res := &ListNode{}

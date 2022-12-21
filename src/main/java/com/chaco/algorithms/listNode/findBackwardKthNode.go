@@ -1,4 +1,4 @@
-package listNode
+package algorithms
 
 func FindKthToTail(pHead *ListNode, k int) *ListNode {
 	pre := pHead
