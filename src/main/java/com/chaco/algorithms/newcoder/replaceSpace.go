@@ -1,4 +1,4 @@
-package nowcoder
+package newcoder
 
 import "strings"
 
