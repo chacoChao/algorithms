@@ -1,4 +1,4 @@
-package com.chaco.algorithms.nowcoder.huawei;
+package com.chaco.algorithms.newcoder.huawei;
 
 import java.util.Scanner;
 

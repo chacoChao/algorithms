@@ -1,4 +1,4 @@
-package com.chaco.algorithms.nowcoder;
+package com.chaco.algorithms.listNode;
 
 /**
  * @author zhaopeiyan
