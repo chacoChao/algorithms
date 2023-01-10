@@ -2,6 +2,8 @@ package com.chaco.algorithms.dp;
 
 import com.chaco.algorithms.TreeNode;
 
+import java.util.*;
+
 /**
  * 二叉树中的最大路径和
  * https://www.nowcoder.com/practice/8fda1d22554f4824b0ef9c26f35e54dd?tpId=230&tqId=39756&ru=/exam/oj
@@ -26,7 +28,23 @@ public class maxPathSum {
         System.out.println("maxPathSum.main");
     }
 
+    int maxSum = Integer.MIN_VALUE;
+
     public int maxPathSum(TreeNode root) {
-        return 0;
+        maxGain(root);
+        return maxSum;
+    }
+
+    //递归
+    private int maxGain(TreeNode root) {
+        if (null == root) {
+            return 0;
+        }
+        int leftGain = Math.max(maxGain(root.left), 0);
+        int rightGain = Math.max(maxGain(root.right), 0);
+        // 节点的最大路径和取决于该节点的值与该节点的左右子节点的最大贡献值
+        int priceNewpath = root.val + leftGain + rightGain;
+        maxSum = Math.max(maxSum, priceNewpath);
+        return root.getVal() + Math.max(leftGain, rightGain);
     }
 }
