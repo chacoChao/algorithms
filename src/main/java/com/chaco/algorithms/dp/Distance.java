@@ -4,6 +4,7 @@ import java.util.Objects;
 
 /**
  * https://leetcode.cn/problems/edit-distance/description/
+ *
  * @author zhaopeiyan
  * @date 2021/12/9 5:28 下午
  */
@@ -39,6 +40,29 @@ public class Distance {
                     return j + 1;
                 }
                 if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
+                    dp[i][j] = dp[i - 1][j - 1];
+                } else {
+                    dp[i][j] = Math.min(Math.min(dp[i - 1][j], dp[i][j - 1]), dp[i - 1][j - 1]) + 1;
+                }
+            }
+        }
+        return dp[word1.length()][word2.length()];
+    }
+
+    public static int editDistance1(String word1, String word2) {
+        int[][] dp = new int[word1.length() + 1][word2.length() + 1];
+        // 第一行
+        for (int j = 1; j <= word2.length(); j++) {
+            dp[0][j] = dp[0][j - 1] + 1;
+        }
+        // 第一列
+        for (int i = 1; i <= word1.length(); i++) {
+            dp[i][0] = dp[i - 1][0] + 1;
+        }
+
+        for (int i = 1; i <= word1.length(); i++) {
+            for (int j = 1; j <= word2.length(); j++) {
+                if (Objects.equals(word1.charAt(i - 1), word2.charAt(j - 1))) {
                     dp[i][j] = dp[i - 1][j - 1];
                 } else {
                     dp[i][j] = Math.min(Math.min(dp[i - 1][j], dp[i][j - 1]), dp[i - 1][j - 1]) + 1;
