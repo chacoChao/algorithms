@@ -8,6 +8,15 @@ package com.chaco.algorithms.array;
  * @author zhaopeiyan
  * @link <a href="https://leetcode-cn.com/problems/median-of-two-sorted-arrays/">...</a>
  * {@code @date} 2021/12/20 4:51 PM
+ * <p>
+ * 输入：nums1 = [1,3], nums2 = [2]
+ * 输出：2.00000
+ * 解释：合并数组 = [1,2,3] ，中位数 2
+ * 示例 2：
+ * <p>
+ * 输入：nums1 = [1,2], nums2 = [3,4]
+ * 输出：2.50000
+ * 解释：合并数组 = [1,2,3,4] ，中位数 (2 + 3) / 2 = 2.5
  */
 public class FindMedianSortedArrays {
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
@@ -59,7 +68,7 @@ public class FindMedianSortedArrays {
 
     public static void main(String[] args) {
         double medianSortedArrays = FindMedianSortedArrays.findMedianSortedArrays(
-                new int[]{}, new int[]{2, 3});
+            new int[]{}, new int[]{2, 3});
 
 //        double medianSortedArrays = FindMedianSortedArrays.findMedianSortedArrays(
 //                new int[]{1, 3}, new int[]{2});
