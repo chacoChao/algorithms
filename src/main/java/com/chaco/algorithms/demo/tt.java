@@ -1,4 +1,5 @@
-package com.chaco.algorithms;
+package com.chaco.algorithms.demo;
+
 /**
  * search demo
  */
