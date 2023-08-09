@@ -6,7 +6,6 @@ import lombok.ToString;
 
 @Data
 @AllArgsConstructor
-@ToString
 public class TreeNode {
     public int val = 0;
     public TreeNode left = null;
@@ -15,6 +14,7 @@ public class TreeNode {
     public TreeNode(int val) {
         this.val = val;
     }
+
     @Override
     public String toString() {
         return "val=" + this.val;
