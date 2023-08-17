@@ -61,15 +61,13 @@ public class deleteDuplicationListNode {
         l33.next = l4;
         ListNode l44 = new ListNode(4);
         l4.next = l44;
-        ListNode l5 = new ListNode(5);
-        l44.next = l5;
+        l44.next = new ListNode(5);
         ListNode res = deleteDuplication1(l1);
         System.out.println("deleteDuplicationListNode.main" + res);
 
         //{1,1}
         ListNode ll1 = new ListNode(1);
-        ListNode ll11 = new ListNode(1);
-        ll1.next = ll11;
+        ll1.next = new ListNode(1);
         ListNode res1 = deleteDuplication1(ll1);
         System.out.println("deleteDuplicationListNode.main" + res1);
     }

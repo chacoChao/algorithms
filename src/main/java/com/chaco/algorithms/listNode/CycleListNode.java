@@ -16,11 +16,13 @@ public class CycleListNode {
         l3.next = l4;
         l4.next = l2;
         ListNode cycle = CycleListNode.cycle(l1);
+        assert cycle != null;
         System.out.println("========" + cycle.val);
     }
 
     public static ListNode cycle(ListNode head) {
-        ListNode p1 = head, p2 = head;
+        ListNode p1 = head;
+        ListNode p2 = head;
         while (null != p2.next && null != p2.next.next) {
             p1 = p1.next;
             p2 = p2.next.next;
